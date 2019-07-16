@@ -1,0 +1,3192 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Raleway:100|Roboto+Condensed:700");
+/* line 7, Z:/JorgeCruz/public-christmas-project/scss/main.scss */
+html {
+  height: 100%;
+}
+
+/* line 10, Z:/JorgeCruz/public-christmas-project/scss/main.scss */
+body {
+  font-family: "Open sans";
+  font-size: 16px;
+  color: #282828;
+  background-color: white;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 19, Z:/JorgeCruz/public-christmas-project/scss/main.scss */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Open sans";
+}
+
+/* line 23, Z:/JorgeCruz/public-christmas-project/scss/main.scss */
+h1, .h1 {
+  color: white;
+  text-transform: capitalize;
+  font-family: "Open sans";
+  font-size: 50px;
+}
+
+/* line 29, Z:/JorgeCruz/public-christmas-project/scss/main.scss */
+h2, .h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 38px;
+}
+
+/* line 34, Z:/JorgeCruz/public-christmas-project/scss/main.scss */
+h3, .h3 {
+  font-family: "Open sans";
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: .05em;
+  text-transform: none;
+  font-size: 24px;
+}
+
+/* line 42, Z:/JorgeCruz/public-christmas-project/scss/main.scss */
+p:selection,
+p:-moz-selection {
+  background-color: #B7D433;
+  color: white;
+}
+
+/* line 47, Z:/JorgeCruz/public-christmas-project/scss/main.scss */
+a {
+  color: #B7D433;
+}
+
+/* line 55, Z:/JorgeCruz/public-christmas-project/scss/main.scss */
+a:hover, a:focus, a:active, a:active:focus, a:active:hover {
+  color: #cde170;
+  text-decoration: none;
+}
+
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
+/* line 1, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+.section-wrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  display: block;
+}
+
+/* line 9, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#banner {
+  position: relative;
+}
+
+/* line 12, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#back-to-top {
+  position: absolute;
+  bottom: 25px;
+  z-index: 9999;
+  left: 45%;
+  right: 0;
+}
+
+/* line 18, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#back-to-top a {
+  color: white;
+  font-size: 22px;
+  text-transform: capitalize;
+  font-weight: bold;
+  text-shadow: 1px 1px black;
+}
+
+/* line 26, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url("../img/loading-background.jpg") 50% 50% no-repeat white;
+  opacity: 1;
+}
+
+/* line 35, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+.loader h1 {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 3em;
+  color: #f90505;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 46, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+.loader .Fliplogo {
+  height: 169px;
+  width: 169px;
+  position: absolute;
+  top: calc(50% - 85px);
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+/* line 61, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+.loader .Fliplogo-inner {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-animation: loading-rotatingLogo 2s ease-in-out infinite;
+          animation: loading-rotatingLogo 2s ease-in-out infinite;
+}
+
+/* line 71, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+.loader .Fliplogo-front, .loader .Fliplogo-back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/* line 80, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+.loader .Fliplogo-back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+@-webkit-keyframes loading-rotatingLogo {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes loading-rotatingLogo {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+/* valores genericos para los copos */
+/* line 95, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+.copo {
+  background-color: #00f;
+  color: #fff;
+  position: relative;
+  z-index: 0;
+}
+
+/* definimos los 4 tipos de copos */
+/* line 102, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+.copo1 {
+  height: 1px;
+  width: 1px;
+}
+
+/* line 106, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+.copo2 {
+  height: 2px;
+  width: 2px;
+}
+
+/* line 110, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+.copo3 {
+  height: 3px;
+  width: 3px;
+  border-radius: 2px;
+}
+
+/* line 115, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+.copo4 {
+  height: 4px;
+  width: 4px;
+  border-radius: 3px;
+}
+
+/* line 120, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* line 130, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline h1 {
+  color: white;
+  display: inline-block;
+  text-align: center;
+  font-size: 50px;
+  padding: 40px 40px;
+}
+
+/* line 139, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline p {
+  color: white;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* line 149, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline .vline-top,
+#timeline .vline-bottom,
+#timeline .hline {
+  border-right: 5px dotted white;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  margin-left: -2px;
+  webkit-animation: lineslidedownfade 3.4s ease-in-out;
+  -webkit-animation: lineslidedownfade 3.4s ease-in-out;
+          animation: lineslidedownfade 3.4s ease-in-out;
+}
+
+/* line 162, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline .vline-top {
+  height: 175px;
+}
+
+/* line 165, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline .vline-bottom {
+  height: 200px;
+  width: 4px;
+}
+
+/* line 172, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .section-scroll {
+  position: relative;
+  height: auto;
+}
+
+/* line 177, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .section-scroll .date h1 {
+  border: 5px dotted white;
+  border-radius: 125px;
+}
+
+/* line 183, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .section-scroll .start h1 {
+  border: 10px solid white;
+  padding: 20px 80px;
+  margin: 10px 10px;
+}
+
+/* line 193, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#we-start span.line-bottom {
+  display: none;
+}
+
+/* line 196, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+span.section-trigger1 {
+  position: relative;
+  top: 330px;
+}
+
+/* line 200, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#section-outer {
+  width: 100%;
+  overflow: hidden;
+  display: block;
+}
+
+/* line 205, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#section-outer #section-inner {
+  position: relative;
+}
+
+/* line 208, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#section-outer #section-inner section.scroll-section {
+  float: left;
+}
+
+/* line 211, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#section-outer #section-inner #challenges {
+  padding: 100px 400px 50px 400px;
+  width: 2670px !important;
+}
+
+/* line 216, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline {
+  background: url(../img/timeline-bg.png) no-repeat top center;
+  background-size: cover;
+  height: 100%;
+  padding-top: 1050px;
+}
+
+/* line 225, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline .vline-bottom {
+  height: 250px;
+}
+
+/* line 229, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline .vline-top {
+  height: 250px;
+}
+
+/* line 232, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline .hline {
+  height: 4px;
+  width: 55%;
+  border-top: 4px dashed #fdfdfe;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  right: 50%;
+  top: 50%;
+  margin-top: 56px;
+  left: -200px;
+}
+
+/* line 244, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+/* line 250, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .section-scroll {
+  position: relative;
+  height: auto;
+}
+
+/* line 255, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .section-scroll .date h1 {
+  border: 5px dotted white;
+  border-radius: 125px;
+}
+
+/* line 261, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .section-scroll .start h1 {
+  border: 10px solid white;
+  padding: 30px 20px;
+}
+
+/* line 268, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .section-trigger2 .vline-bottom {
+  height: 490px;
+  top: -720px;
+  width: 4px;
+  border-right: 4px dashed #fdfdfe;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  margin-left: -2px;
+}
+
+/* line 280, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline #we-start {
+  padding: 250px 0 250px 0;
+}
+
+/* line 284, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .section-trigger1 {
+  position: relative;
+  top: 30px;
+}
+
+/* line 288, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .section-trigger2 {
+  position: relative;
+  top: 280px;
+  display: block;
+}
+
+/* line 294, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline #section-outer1 {
+  width: 100%;
+  overflow: hidden;
+  display: block;
+}
+
+/* line 298, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline #section-outer1 #section-inner1 {
+  position: relative;
+}
+
+/* line 305, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline #section-outer2 {
+  width: 100%;
+  overflow: hidden;
+  display: block;
+}
+
+/* line 309, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline #section-outer2 #section-inner2 {
+  position: relative;
+}
+
+/* line 311, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline #section-outer2 #section-inner2 #challenges {
+  float: left;
+}
+
+/* line 317, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .scroll-bidreccional {
+  padding-bottom: 400px;
+}
+
+/* line 321, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges,
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 {
+  position: relative;
+  width: 3200px !important;
+  height: 450px;
+  padding-left: 200px;
+  float: left;
+}
+
+/* line 328, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges:before,
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2:before,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges:before,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2:before {
+  position: absolute;
+  left: 100px;
+  right: 0;
+  content: "";
+  background-color: rgba(255, 255, 255, 0.5);
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 1600px;
+}
+
+/* line 340, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges:after,
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2:after,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges:after,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2:after {
+  position: absolute;
+  left: 1700px;
+  right: 0;
+  content: "";
+  background-color: rgba(249, 249, 249, 0.5);
+  top: 0;
+  bottom: 0;
+  z-index: -2;
+  width: 1300px;
+}
+
+/* line 352, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges .product-box,
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2 .product-box,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges .product-box,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 .product-box {
+  width: 400px;
+  float: left;
+  margin-left: 50px;
+}
+
+/* line 357, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges .product-box .title,
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2 .product-box .title,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges .product-box .title,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 .product-box .title {
+  padding-top: 20px;
+}
+
+/* line 359, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges .product-box .title h1,
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2 .product-box .title h1,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges .product-box .title h1,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 .product-box .title h1 {
+  background-color: #172642;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 10px 30px;
+}
+
+/* line 367, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges .product-box .content-box,
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2 .product-box .content-box,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges .product-box .content-box,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 .product-box .content-box {
+  background: url(../img/computadora.png) no-repeat top center;
+  background-size: cover;
+  height: 330px;
+  width: 100%;
+  position: relative;
+}
+
+/* line 373, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges .product-box .content-box .image,
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2 .product-box .content-box .image,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges .product-box .content-box .image,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 .product-box .content-box .image {
+  width: 92%;
+  height: 65%;
+  /* padding: 20px 20px 20px 20px; */
+  position: absolute;
+  left: 0;
+  top: 16px;
+  left: 16px;
+}
+
+/* line 381, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges .product-box .content-box .image:hover,
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2 .product-box .content-box .image:hover,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges .product-box .content-box .image:hover,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 .product-box .content-box .image:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/* line 385, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges .product-box .content-box #basic-template,
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2 .product-box .content-box #basic-template,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges .product-box .content-box #basic-template,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 .product-box .content-box #basic-template {
+  background: url(../img/Basic-template.png) no-repeat top center;
+  background-size: cover;
+}
+
+/* line 390, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges .product-box .content-box #t1-template,
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2 .product-box .content-box #t1-template,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges .product-box .content-box #t1-template,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 .product-box .content-box #t1-template {
+  background: url(../img/T1-Sandstorm.png) no-repeat top center;
+  background-size: cover;
+}
+
+/* line 395, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges .product-box .content-box #t2-template,
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2 .product-box .content-box #t2-template,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges .product-box .content-box #t2-template,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 .product-box .content-box #t2-template {
+  background: url(../img/T2-Sandstorm.png) no-repeat top center;
+  background-size: cover;
+}
+
+/* line 400, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges .product-box .content-box #t3-template,
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2 .product-box .content-box #t3-template,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges .product-box .content-box #t3-template,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 .product-box .content-box #t3-template {
+  background: url(../img/T3-Sandstorm.png) no-repeat top center;
+  background-size: cover;
+}
+
+/* line 405, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges .product-box .content-box #t4-template,
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2 .product-box .content-box #t4-template,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges .product-box .content-box #t4-template,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 .product-box .content-box #t4-template {
+  background: url(../img/T4-Sandstorm.png) no-repeat top center;
+  background-size: cover;
+}
+
+/* line 410, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges .product-box .content-box #t5-template,
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2 .product-box .content-box #t5-template,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges .product-box .content-box #t5-template,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 .product-box .content-box #t5-template {
+  background: url(../img/T5-Sandstorm.png) no-repeat top center;
+  background-size: cover;
+}
+
+/* line 415, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges .product-box .content-box #academy-template,
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2 .product-box .content-box #academy-template,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges .product-box .content-box #academy-template,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 .product-box .content-box #academy-template {
+  background: url(../img/template-academy.png) no-repeat top center;
+  background-size: cover;
+}
+
+/* line 420, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges .product-box .content-box #bravo-template,
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2 .product-box .content-box #bravo-template,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges .product-box .content-box #bravo-template,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 .product-box .content-box #bravo-template {
+  background: url(../img/template-bravo.png) no-repeat top center;
+  background-size: cover;
+}
+
+/* line 425, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges .product-box .content-box #premium-template,
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2 .product-box .content-box #premium-template,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges .product-box .content-box #premium-template,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 .product-box .content-box #premium-template {
+  background: url(../img/template-premium.png) no-repeat top center;
+  background-size: cover;
+}
+
+/* line 430, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges .product-box .content-box #design-template,
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2 .product-box .content-box #design-template,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges .product-box .content-box #design-template,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 .product-box .content-box #design-template {
+  background: url(../img/template-design.jpg) no-repeat top center;
+  background-size: cover;
+}
+
+/* line 435, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges .product-box .content-box #video-template,
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2 .product-box .content-box #video-template,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges .product-box .content-box #video-template,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 .product-box .content-box #video-template {
+  background: url(../img/template-video.jpg) no-repeat top center;
+  background-size: cover;
+}
+
+/* line 443, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #we-grew,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #we-grew {
+  float: left;
+  padding: 50px 20px;
+}
+
+/* line 447, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #we-grew .date h1,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #we-grew .date h1 {
+  padding: 50px 20px;
+}
+
+/* line 451, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #we-grew .hline,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #we-grew .hline {
+  width: 75%;
+}
+
+/* line 455, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #we-grew2,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #we-grew2 {
+  float: left;
+  padding: 50px 20px;
+}
+
+/* line 459, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #we-grew2 .date h1,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #we-grew2 .date h1 {
+  padding: 50px 20px;
+}
+
+/* line 463, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #we-grew2 .hline,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #we-grew2 .hline {
+  width: 75%;
+}
+
+/* line 467, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #we-grew2 #we-want-more,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #we-grew2 #we-want-more {
+  padding-top: 75px;
+}
+
+/* line 469, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #we-grew2 #we-want-more .content-box,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #we-grew2 #we-want-more .content-box {
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* line 473, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #we-grew2 #we-want-more .content-box .box,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #we-grew2 #we-want-more .content-box .box {
+  padding: 5px;
+}
+
+/* line 476, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #we-grew2 #we-want-more .content-box .box .content-text .icon,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #we-grew2 #we-want-more .content-box .box .content-text .icon {
+  padding: 20px;
+}
+
+/* line 480, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #we-grew2 #we-want-more .content-box .box .content-text .title h1,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #we-grew2 #we-want-more .content-box .box .content-text .title h1 {
+  color: #1E243A;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+/* line 488, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #we-grew2 #we-want-more .content-box .box .content-text .description p,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #we-grew2 #we-want-more .content-box .box .content-text .description p {
+  color: #333;
+  width: 100%;
+  padding-top: 0px;
+}
+
+/* line 499, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 {
+  width: 2750px !important;
+  margin-top: 50px;
+}
+
+/* line 502, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2:after,
+#timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2:after {
+  left: 1700px;
+  width: 870px;
+}
+
+/* line 512, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+.bground {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+/* line 521, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+.bground-initial {
+  z-index: 0;
+  background: url("../img/timeline-bg-blur.png") no-repeat top center scroll;
+  background-size: cover;
+}
+
+/* line 529, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+.bground1 {
+  background: url("../img/timeline-test.jpg") no-repeat top center fixed;
+  background-size: cover;
+}
+
+/* line 536, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+.bground1-fade {
+  background: url("../img/timeline-bg-blur.png") no-repeat top center fixed;
+  background-size: cover;
+}
+
+/* line 543, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+.bground2 {
+  background: url("../img/timeline-bg2.jpg") no-repeat top center fixed;
+  background-size: cover;
+}
+
+/* line 550, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+.bground2-fade {
+  background: url("../img/timeline-bg2-blur.jpg") no-repeat top center fixed;
+  background-size: cover;
+}
+
+/* line 557, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+.bground3 {
+  background: url("../img/timeline-bg3.jpg") no-repeat top center fixed;
+  background-size: cover;
+}
+
+/* line 564, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+.bground3-fade {
+  background: url("../img/timeline-bg3-blur.jpg") no-repeat top center fixed;
+  background-size: cover;
+}
+
+/* line 571, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+.bground4 {
+  background: url("../img/timeline-bg4.jpg") no-repeat top center fixed;
+  background-size: cover;
+}
+
+/* line 579, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+.bground4-fade {
+  background: url("../img/timeline-bg4-color.jpg") no-repeat top center fixed;
+  background-size: cover;
+}
+
+/* line 587, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+#testimonials {
+  padding-top: 9760px;
+}
+
+@media (min-width: 768px) {
+  /* line 593, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline {
+    background: url(../img/timeline-bg.png) no-repeat top center;
+    background-size: cover;
+    height: 100%;
+  }
+  /* line 602, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline p {
+    width: 30%;
+  }
+  /* line 605, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline .vline-bottom {
+    height: 450px;
+  }
+  /* line 609, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline .vline-top {
+    height: 450px;
+  }
+  /* line 612, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline .hline {
+    height: 4px;
+    width: 44%;
+    border-top: 4px dashed #fdfdfe;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    right: 50%;
+    top: 37%;
+    margin-top: 56px;
+    left: -120px;
+  }
+  /* line 624, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+  }
+  /* line 630, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .section-scroll {
+    position: relative;
+    height: auto;
+  }
+  /* line 635, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .section-scroll .date h1 {
+    border: 5px dotted white;
+    border-radius: 125px;
+  }
+  /* line 641, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .section-scroll .start h1 {
+    border: 10px solid white;
+    padding: 30px 80px;
+  }
+  /* line 648, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .section-trigger2 .vline-bottom {
+    height: 450px;
+    top: -720px;
+    width: 4px;
+    border-right: 4px dashed #fdfdfe;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    margin-left: -2px;
+  }
+  /* line 660, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline #we-start {
+    padding: 450px 0 450px 0;
+  }
+  /* line 664, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .section-trigger1 {
+    position: relative;
+    top: 30px;
+  }
+  /* line 668, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .section-trigger2 {
+    position: relative;
+    top: 280px;
+    display: block;
+  }
+  /* line 674, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline #section-outer1 {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+  }
+  /* line 678, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline #section-outer1 #section-inner1 {
+    position: relative;
+  }
+  /* line 685, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline #section-outer2 {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+  }
+  /* line 689, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline #section-outer2 #section-inner2 {
+    position: relative;
+  }
+  /* line 691, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline #section-outer2 #section-inner2 #challenges {
+    float: left;
+  }
+  /* line 697, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .scroll-bidreccional {
+    padding-bottom: 400px;
+  }
+  /* line 701, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges,
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 {
+    position: relative;
+    width: 3200px !important;
+    height: 450px;
+    padding-left: 320px;
+    float: left;
+    overflow: hidden;
+  }
+  /* line 709, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges:before,
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2:before,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges:before,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2:before {
+    position: absolute;
+    left: 200px;
+    right: 0;
+    content: "";
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-transform: skew(69deg, 115deg);
+        -ms-transform: skew(69deg, 115deg);
+            transform: skew(69deg, 115deg);
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 1600px;
+  }
+  /* line 721, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges:after,
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2:after,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges:after,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2:after {
+    position: absolute;
+    left: 1649px;
+    right: 0;
+    content: "";
+    background-color: rgba(249, 249, 249, 0.5);
+    -webkit-transform: skew(71deg, 115deg);
+        -ms-transform: skew(71deg, 115deg);
+            transform: skew(71deg, 115deg);
+    top: 0;
+    bottom: 0;
+    z-index: -2;
+    width: 1600px;
+  }
+  /* line 733, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges .product-box,
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2 .product-box,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges .product-box,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 .product-box {
+    width: 400px;
+    float: left;
+    margin-left: 50px;
+  }
+  /* line 738, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges .product-box .title,
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2 .product-box .title,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges .product-box .title,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 .product-box .title {
+    padding-top: 40px;
+  }
+  /* line 740, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges .product-box .title h1,
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2 .product-box .title h1,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges .product-box .title h1,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 .product-box .title h1 {
+    background-color: #172642;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 10px 30px;
+  }
+  /* line 748, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges .product-box .content-box,
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2 .product-box .content-box,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges .product-box .content-box,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 .product-box .content-box {
+    background: url(../img/computadora.png) no-repeat top center;
+    background-size: cover;
+    height: 330px;
+    width: 100%;
+    position: relative;
+  }
+  /* line 754, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges .product-box .content-box .image,
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2 .product-box .content-box .image,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges .product-box .content-box .image,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 .product-box .content-box .image {
+    width: 92%;
+    height: 65%;
+    /* padding: 20px 20px 20px 20px; */
+    position: absolute;
+    left: 0;
+    top: 16px;
+    left: 16px;
+  }
+  /* line 762, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges .product-box .content-box .image:hover,
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2 .product-box .content-box .image:hover,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges .product-box .content-box .image:hover,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 .product-box .content-box .image:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  /* line 766, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges .product-box .content-box #basic-template,
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2 .product-box .content-box #basic-template,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges .product-box .content-box #basic-template,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 .product-box .content-box #basic-template {
+    background: url(../img/Basic-template.png) no-repeat top center;
+    background-size: cover;
+  }
+  /* line 771, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges .product-box .content-box #t1-template,
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2 .product-box .content-box #t1-template,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges .product-box .content-box #t1-template,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 .product-box .content-box #t1-template {
+    background: url(../img/T1-Sandstorm.png) no-repeat top center;
+    background-size: cover;
+  }
+  /* line 776, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges .product-box .content-box #t2-template,
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2 .product-box .content-box #t2-template,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges .product-box .content-box #t2-template,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 .product-box .content-box #t2-template {
+    background: url(../img/T2-Sandstorm.png) no-repeat top center;
+    background-size: cover;
+  }
+  /* line 781, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges .product-box .content-box #t3-template,
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2 .product-box .content-box #t3-template,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges .product-box .content-box #t3-template,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 .product-box .content-box #t3-template {
+    background: url(../img/T3-Sandstorm.png) no-repeat top center;
+    background-size: cover;
+  }
+  /* line 786, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges .product-box .content-box #t4-template,
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2 .product-box .content-box #t4-template,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges .product-box .content-box #t4-template,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 .product-box .content-box #t4-template {
+    background: url(../img/T4-Sandstorm.png) no-repeat top center;
+    background-size: cover;
+  }
+  /* line 791, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges .product-box .content-box #t5-template,
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2 .product-box .content-box #t5-template,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges .product-box .content-box #t5-template,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 .product-box .content-box #t5-template {
+    background: url(../img/T5-Sandstorm.png) no-repeat top center;
+    background-size: cover;
+  }
+  /* line 796, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges .product-box .content-box #academy-template,
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2 .product-box .content-box #academy-template,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges .product-box .content-box #academy-template,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 .product-box .content-box #academy-template {
+    background: url(../img/template-academy.png) no-repeat top center;
+    background-size: cover;
+  }
+  /* line 801, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges .product-box .content-box #bravo-template,
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2 .product-box .content-box #bravo-template,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges .product-box .content-box #bravo-template,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 .product-box .content-box #bravo-template {
+    background: url(../img/template-bravo.png) no-repeat top center;
+    background-size: cover;
+  }
+  /* line 806, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges .product-box .content-box #premium-template,
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2 .product-box .content-box #premium-template,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges .product-box .content-box #premium-template,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 .product-box .content-box #premium-template {
+    background: url(../img/template-premium.png) no-repeat top center;
+    background-size: cover;
+  }
+  /* line 811, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges .product-box .content-box #design-template,
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2 .product-box .content-box #design-template,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges .product-box .content-box #design-template,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 .product-box .content-box #design-template {
+    background: url(../img/template-design.jpg) no-repeat top center;
+    background-size: cover;
+  }
+  /* line 816, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges .product-box .content-box #video-template,
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2 .product-box .content-box #video-template,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges .product-box .content-box #video-template,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 .product-box .content-box #video-template {
+    background: url(../img/template-video.jpg) no-repeat top center;
+    background-size: cover;
+  }
+  /* line 824, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #we-grew,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #we-grew {
+    float: left;
+    padding: 50px 20px;
+  }
+  /* line 828, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #we-grew .date h1,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #we-grew .date h1 {
+    padding: 50px 20px;
+  }
+  /* line 832, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #we-grew .hline,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #we-grew .hline {
+    width: 42%;
+    top: 37%;
+  }
+  /* line 837, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #we-grew2,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #we-grew2 {
+    float: left;
+    padding: 50px 20px;
+  }
+  /* line 841, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #we-grew2 .date h1,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #we-grew2 .date h1 {
+    padding: 50px 20px;
+  }
+  /* line 845, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #we-grew2 .hline,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #we-grew2 .hline {
+    width: 42%;
+    top: 23%;
+  }
+  /* line 850, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #we-grew2 #we-want-more .container-fluid,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #we-grew2 #we-want-more .container-fluid {
+    position: relative;
+    left: -25px;
+  }
+  /* line 853, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #we-grew2 #we-want-more .container-fluid .row,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #we-grew2 #we-want-more .container-fluid .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  /* line 858, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #we-grew2 #we-want-more .container-fluid .row .col,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #we-grew2 #we-want-more .container-fluid .row .col {
+    margin-bottom: 20px;
+  }
+  /* line 860, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #we-grew2 #we-want-more .container-fluid .row .col .content-box,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #we-grew2 #we-want-more .container-fluid .row .col .content-box {
+    height: 100%;
+  }
+  /* line 869, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2 {
+    width: 2775px !important;
+    margin-top: 75px;
+    overflow: hidden;
+  }
+  /* line 873, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2:before,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2:before {
+    height: 450px;
+  }
+  /* line 876, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline .scroll-bidreccional #section-inner1 #challenges2:after,
+  #timeline #content-timeline .scroll-bidreccional #section-inner2 #challenges2:after {
+    left: 1402px;
+    -webkit-transform: skew(61deg, 115deg);
+        -ms-transform: skew(61deg, 115deg);
+            transform: skew(61deg, 115deg);
+  }
+  /* line 886, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  .bground {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+  /* line 895, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  .bground-initial {
+    z-index: 0;
+    background: url("../img/timeline-bg-blur.png") no-repeat top center scroll;
+    background-size: cover;
+  }
+  /* line 903, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  .bground1 {
+    background: url("../img/timeline-test.jpg") no-repeat top center fixed;
+    background-size: cover;
+  }
+  /* line 910, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  .bground1-fade {
+    background: url("../img/timeline-bg-blur.png") no-repeat top center fixed;
+    background-size: cover;
+  }
+  /* line 917, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  .bground2 {
+    background: url("../img/timeline-bg2.jpg") no-repeat top center fixed;
+    background-size: cover;
+  }
+  /* line 924, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  .bground2-fade {
+    background: url("../img/timeline-bg2-blur.jpg") no-repeat top center fixed;
+    background-size: cover;
+  }
+  /* line 931, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  .bground3 {
+    background: url("../img/timeline-bg3.jpg") no-repeat top center fixed;
+    background-size: cover;
+  }
+  /* line 938, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  .bground3-fade {
+    background: url("../img/timeline-bg3-blur.jpg") no-repeat top center fixed;
+    background-size: cover;
+  }
+  /* line 945, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  .bground4 {
+    background: url("../img/timeline-bg4.jpg") no-repeat top center fixed;
+    background-size: cover;
+  }
+  /* line 952, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  .bground4-fade {
+    background: url("../img/timeline-bg4-color.jpg") no-repeat top center fixed;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 962, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+  }
+  /* line 969, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline {
+    padding-top: 2650px;
+  }
+  /* line 975, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline #we-grew2 #we-want-more .container-fluid .col {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 32%;
+            flex: 0 0 32%;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 994, Z:/JorgeCruz/public-christmas-project/scss/_home.scss */
+  #timeline #content-timeline #we-grew2 #we-want-more .container-fluid .col {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+            flex: 0 0 20%;
+  }
+}
+
+/* line 2, Z:/JorgeCruz/public-christmas-project/scss/_header_video.scss */
+#banner {
+  height: 100%;
+  position: relative;
+  z-index: 15;
+  overflow: hidden;
+}
+
+/* line 8, Z:/JorgeCruz/public-christmas-project/scss/_header_video.scss */
+#banner .frommd {
+  display: none;
+}
+
+/* line 14, Z:/JorgeCruz/public-christmas-project/scss/_header_video.scss */
+#banner .homeBanner {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+/* line 24, Z:/JorgeCruz/public-christmas-project/scss/_header_video.scss */
+#banner .homeBanner .banner-bg {
+  background: url("../img/headerbg.png") top center no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 100;
+}
+
+/* line 34, Z:/JorgeCruz/public-christmas-project/scss/_header_video.scss */
+#banner #images {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* line 39, Z:/JorgeCruz/public-christmas-project/scss/_header_video.scss */
+#banner .images img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  max-width: 100%;
+}
+
+/* line 46, Z:/JorgeCruz/public-christmas-project/scss/_header_video.scss */
+#banner .images img#img2, #banner .images img#img2-mob {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 150%;
+  z-index: 120;
+}
+
+/* line 54, Z:/JorgeCruz/public-christmas-project/scss/_header_video.scss */
+#banner .images img#img1 {
+  left: 0;
+  bottom: 0;
+  top: auto;
+  height: 25%;
+  z-index: 120;
+}
+
+/* line 62, Z:/JorgeCruz/public-christmas-project/scss/_header_video.scss */
+#banner #bgvid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  max-height: 100%;
+  height: 100%;
+  background: black;
+}
+
+/* line 73, Z:/JorgeCruz/public-christmas-project/scss/_header_video.scss */
+#banner #bgvid video {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+
+@-webkit-keyframes arrowAnimation {
+  0% {
+    top: 30px;
+  }
+  50% {
+    top: 50px;
+  }
+  100% {
+    top: 30px;
+  }
+}
+
+@keyframes arrowAnimation {
+  0% {
+    top: 30px;
+  }
+  50% {
+    top: 50px;
+  }
+  100% {
+    top: 30px;
+  }
+}
+
+/* line 89, Z:/JorgeCruz/public-christmas-project/scss/_header_video.scss */
+#banner p#scroll-msg {
+  position: absolute;
+  width: 100%;
+  bottom: 300px;
+  top: auto;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  left: 0px;
+  text-shadow: 0px 0px 14px black;
+}
+
+/* line 102, Z:/JorgeCruz/public-christmas-project/scss/_header_video.scss */
+#banner p#scroll-msg i {
+  position: absolute;
+  top: 20px;
+  -webkit-animation-name: arrowAnimation;
+          animation-name: arrowAnimation;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@media (min-width: 768px) {
+  /* line 113, Z:/JorgeCruz/public-christmas-project/scss/_header_video.scss */
+  #banner .images img#img1 {
+    height: 52%;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 122, Z:/JorgeCruz/public-christmas-project/scss/_header_video.scss */
+  #banner .frommd {
+    display: block;
+  }
+  /* line 127, Z:/JorgeCruz/public-christmas-project/scss/_header_video.scss */
+  #banner .images img#img1 {
+    left: 0;
+    height: 70%;
+    z-index: 120;
+  }
+  /* line 133, Z:/JorgeCruz/public-christmas-project/scss/_header_video.scss */
+  p#scroll-msg {
+    bottom: 105px;
+    left: -25px;
+  }
+  /* line 138, Z:/JorgeCruz/public-christmas-project/scss/_header_video.scss */
+  #banner .images img#img2 {
+    width: 85%;
+    left: auto;
+    right: 0;
+  }
+  /* line 144, Z:/JorgeCruz/public-christmas-project/scss/_header_video.scss */
+  #banner #bgvid video {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: relative;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 156, Z:/JorgeCruz/public-christmas-project/scss/_header_video.scss */
+  #banner .images img#img1 {
+    height: 100%;
+  }
+  /* line 160, Z:/JorgeCruz/public-christmas-project/scss/_header_video.scss */
+  #banner .images img#img2 {
+    width: 90%;
+  }
+}
+
+@-webkit-keyframes unfold {
+  0% {
+    -webkit-transform: perspective(600px) rotateX(-90deg);
+            transform: perspective(600px) rotateX(-90deg);
+    bottom: -180px;
+  }
+  100% {
+    -webkit-transform: perspective(600px) rotateX(0deg);
+            transform: perspective(600px) rotateX(0deg);
+    bottom: -3px;
+  }
+}
+
+@keyframes unfold {
+  0% {
+    -webkit-transform: perspective(600px) rotateX(-90deg);
+            transform: perspective(600px) rotateX(-90deg);
+    bottom: -180px;
+  }
+  100% {
+    -webkit-transform: perspective(600px) rotateX(0deg);
+            transform: perspective(600px) rotateX(0deg);
+    bottom: -3px;
+  }
+}
+
+@-webkit-keyframes unfoldBushes {
+  0% {
+    -webkit-transform: perspective(600px) rotateX(-90deg);
+            transform: perspective(600px) rotateX(-90deg);
+    bottom: -180px;
+  }
+  100% {
+    -webkit-transform: perspective(600px) rotateX(0deg);
+            transform: perspective(600px) rotateX(0deg);
+    bottom: -5px;
+  }
+}
+
+@keyframes unfoldBushes {
+  0% {
+    -webkit-transform: perspective(600px) rotateX(-90deg);
+            transform: perspective(600px) rotateX(-90deg);
+    bottom: -180px;
+  }
+  100% {
+    -webkit-transform: perspective(600px) rotateX(0deg);
+            transform: perspective(600px) rotateX(0deg);
+    bottom: -5px;
+  }
+}
+
+/* line 180, Z:/JorgeCruz/public-christmas-project/scss/_header_video.scss */
+#message .mssg-header {
+  position: relative;
+  height: 100%;
+}
+
+/* line 185, Z:/JorgeCruz/public-christmas-project/scss/_header_video.scss */
+#message .mssg-header img {
+  width: 100%;
+}
+
+/* line 193, Z:/JorgeCruz/public-christmas-project/scss/_header_video.scss */
+#message .mssg-header .mssg-animation img {
+  position: absolute;
+  bottom: 0;
+}
+
+/* line 199, Z:/JorgeCruz/public-christmas-project/scss/_header_video.scss */
+#message .mssg-header .mssg-animation #bush1, #message .mssg-header .mssg-animation #bush2 {
+  width: 15%;
+  bottom: -5px;
+  visibility: hidden;
+  -webkit-transition: all ease 0.8s;
+  -o-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+}
+
+/* line 207, Z:/JorgeCruz/public-christmas-project/scss/_header_video.scss */
+#message .mssg-header .mssg-animation #bush2 {
+  width: 25%;
+  right: 0;
+  -webkit-transition-duration: 2.2s;
+       -o-transition-duration: 2.2s;
+          transition-duration: 2.2s;
+}
+
+/* line 214, Z:/JorgeCruz/public-christmas-project/scss/_header_video.scss */
+#message .mssg-header .mssg-animation #building {
+  width: 85%;
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  margin: 0 auto;
+  visibility: hidden;
+}
+
+/* line 226, Z:/JorgeCruz/public-christmas-project/scss/_header_video.scss */
+#message .mssg-header .mssg-animation.animate #bush1, #message .mssg-header .mssg-animation.animate #bush2 {
+  -webkit-animation-name: unfoldBushes;
+          animation-name: unfoldBushes;
+  -webkit-animation-duration: 1.8s;
+          animation-duration: 1.8s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  visibility: unset;
+}
+
+/* line 234, Z:/JorgeCruz/public-christmas-project/scss/_header_video.scss */
+#message .mssg-header .mssg-animation.animate #building {
+  -webkit-animation-name: unfold;
+          animation-name: unfold;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  visibility: unset;
+}
+
+/* line 246, Z:/JorgeCruz/public-christmas-project/scss/_header_video.scss */
+#message .mssg-content {
+  margin-top: 100px;
+}
+
+/* line 249, Z:/JorgeCruz/public-christmas-project/scss/_header_video.scss */
+#message .mssg-content .mssg-title {
+  margin-bottom: 35px;
+}
+
+/* line 253, Z:/JorgeCruz/public-christmas-project/scss/_header_video.scss */
+#message .mssg-content .mssg-title p {
+  font-size: 30px;
+  color: white;
+  padding: 25px 50px;
+  background-color: #162642;
+  border-radius: 20px;
+}
+
+/* line 1, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+.modal-backdrop.in {
+  position: relative;
+}
+
+/* line 6, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+#gallerySection {
+  background-image: url("../img/background-gallery.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 969px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+  position: relative;
+}
+
+/* line 18, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+.galleryContainer {
+  /*background-color: rgb(255, 255, 255);
+	width: 90%;*/
+  margin: 0 auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+/* line 31, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+body .galleryContainer div {
+  /*width: 33.33%;*/
+  height: 300px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-transition: ease-in 0.6s;
+  -o-transition: ease-in 0.6s;
+  transition: ease-in 0.6s;
+  z-index: 0;
+}
+
+/* line 40, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+body .galleryContainer div a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 46, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+body .galleryContainer div:hover {
+  -webkit-transition: ease-out 0.6s;
+  -o-transition: ease-out 0.6s;
+  transition: ease-out 0.6s;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  z-index: 1;
+}
+
+/* line 52, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+.my_Close {
+  font-size: 50px;
+  opacity: 0.4;
+}
+
+/* line 57, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+#frst-img {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 30%, 85% 80%, 35% 100%, 35% 70%, 0% 80%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 30%, 85% 80%, 35% 100%, 35% 70%, 0% 80%);
+}
+
+/* line 60, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+#scnd-img {
+  -webkit-clip-path: polygon(20% 0%, 100% 0%, 80% 30%, 100% 50%, 80% 95%, 60% 80%, 10% 70%, 20% 30%);
+          clip-path: polygon(20% 0%, 100% 0%, 80% 30%, 100% 50%, 80% 95%, 60% 80%, 10% 70%, 20% 30%);
+  margin: 0 -5%;
+}
+
+/* line 64, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+#thrd-img {
+  -webkit-clip-path: polygon(20% 0%, 100% 0%, 100% 0%, 100% 100%, 75% 80%, 5% 80%, 20% 50%, 0% 30%);
+          clip-path: polygon(20% 0%, 100% 0%, 100% 0%, 100% 100%, 75% 80%, 5% 80%, 20% 50%, 0% 30%);
+}
+
+/* line 67, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+#fth-img {
+  -webkit-clip-path: polygon(0% 15%, 30% 5%, 30% 40%, 85% 15%, 100% 85%, 55% 100%, 0% 80%);
+          clip-path: polygon(0% 15%, 30% 5%, 30% 40%, 85% 15%, 100% 85%, 55% 100%, 0% 80%);
+  margin: -9% 0;
+}
+
+/* line 71, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+#fve-img {
+  -webkit-clip-path: polygon(5% 10%, 10% 5%, 60% 15%, 95% 40%, 100% 100%, 100% 100%, 25% 80%, 20% 85%);
+          clip-path: polygon(5% 10%, 10% 5%, 60% 15%, 95% 40%, 100% 100%, 100% 100%, 25% 80%, 20% 85%);
+  margin: -9% -5%;
+}
+
+/* line 75, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+#six-img {
+  -webkit-clip-path: polygon(0% 25%, 5% 15%, 75% 15%, 100% 40%, 100% 100%, 100% 80%, 20% 100%, 15% 40%);
+          clip-path: polygon(0% 25%, 5% 15%, 75% 15%, 100% 40%, 100% 100%, 100% 80%, 20% 100%, 15% 40%);
+  margin: -9% 0;
+}
+
+/* line 79, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+#svn-img {
+  -webkit-clip-path: polygon(0% 15%, 55% 35%, 95% 20%, 100% 75%, 90% 100%, 0% 100%);
+          clip-path: polygon(0% 15%, 55% 35%, 95% 20%, 100% 75%, 90% 100%, 0% 100%);
+  margin: 0;
+}
+
+/* line 83, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+#eit-img {
+  -webkit-clip-path: polygon(15% 20%, 25% 15%, 95% 35%, 90% 80%, 100% 100%, 20% 100%, 10% 100%, 20% 75%);
+          clip-path: polygon(15% 20%, 25% 15%, 95% 35%, 90% 80%, 100% 100%, 20% 100%, 10% 100%, 20% 75%);
+  margin: 0 -5%;
+}
+
+/* line 87, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+#nin-img {
+  -webkit-clip-path: polygon(15% 40%, 100% 15%, 100% 100%, 20% 100%, 10% 80%);
+          clip-path: polygon(15% 40%, 100% 15%, 100% 100%, 20% 100%, 10% 80%);
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  /* line 92, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  .modal-dialog {
+    width: 700px;
+  }
+  /* line 96, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #frst-img:hover {
+    background-image: url("../img/galleryImage1.png");
+    background-size: cover;
+    background-position: center right -50px;
+  }
+  /* line 101, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #scnd-img:hover {
+    background-image: url("../img/galleryImage2.png");
+    background-size: cover;
+    background-position: center left -35px;
+  }
+  /* line 106, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #thrd-img:hover {
+    background-image: url("../img/galleryImage3.png");
+    background-size: cover;
+    background-position: center top -10px;
+  }
+  /* line 111, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #fth-img:hover {
+    background-image: url("../img/galleryImage4.png");
+    background-size: cover;
+    background-position: center top 15px;
+  }
+  /* line 116, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #fve-img:hover {
+    background-image: url("../img/galleryImage5.png");
+    background-size: cover;
+    background-position: center top;
+  }
+  /* line 121, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #six-img:hover {
+    background-image: url("../img/galleryImage6.png");
+    background-size: cover;
+    background-position: center right;
+  }
+  /* line 126, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #svn-img:hover {
+    background-image: url("../img/galleryImage7.png");
+    background-size: cover;
+    background-position: right -65px top 60px;
+  }
+  /* line 131, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #eit-img:hover {
+    background-image: url("../img/galleryImage8.png");
+    background-size: cover;
+    background-position: center left 15px;
+  }
+  /* line 136, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #nin-img:hover {
+    background-image: url("../img/galleryImage9.png");
+    background-size: cover;
+    background-position: left -20px top 60px;
+  }
+}
+
+@media (min-width: 1080px) {
+  /* line 145, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #gallerySection {
+    height: 950px;
+  }
+  /* line 148, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  body .galleryContainer div {
+    height: 350px;
+  }
+  /* line 152, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  .modal-dialog {
+    width: 900px;
+  }
+}
+
+@media (min-width: 1381px) {
+  /* line 159, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #gallerySection {
+    height: 1050px;
+  }
+  /* line 162, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  body .galleryContainer div {
+    height: 400px;
+  }
+}
+
+@media (min-width: 1441px) {
+  /* line 168, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #gallerySection {
+    height: 1520px;
+  }
+  /* line 171, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  body .galleryContainer div {
+    height: 550px;
+  }
+  /* line 175, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #frst-img:hover {
+    background-position: center right;
+  }
+  /* line 178, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #scnd-img:hover {
+    background-position: center left -35px;
+  }
+  /* line 181, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #thrd-img:hover {
+    background-position: center top -20px;
+  }
+  /* line 184, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #fth-img:hover {
+    background-position: center top 30px;
+  }
+  /* line 187, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #fve-img:hover {
+    background-position: center top 95px;
+  }
+  /* line 190, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #six-img:hover {
+    background-position: center right;
+  }
+  /* line 193, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #svn-img:hover {
+    background-position: right -80px top 70px;
+  }
+  /* line 196, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #eit-img:hover {
+    background-position: center left 30px;
+  }
+  /* line 199, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #nin-img:hover {
+    background-position: left -20px top 90px;
+  }
+}
+
+@media (min-width: 1961px) {
+  /* line 205, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #fth-img {
+    margin: -7% 0;
+  }
+  /* line 209, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #fve-img {
+    margin: -7% -5%;
+  }
+  /* line 213, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #six-img {
+    margin: -7% 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 219, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #fth-img {
+    margin: -13% 0;
+  }
+  /* line 223, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #fve-img {
+    margin: -13% -5%;
+  }
+  /* line 227, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #six-img {
+    margin: -13% 0;
+  }
+}
+
+@media (max-width: 425px) {
+  /* line 233, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  .img-cont {
+    margin-bottom: 20px !important;
+  }
+  /* line 237, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  body .galleryContainer div {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  /* line 241, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  body .galleryContainer div:hover {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+  }
+  /* line 245, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #gallerySection {
+    height: auto;
+  }
+  /* line 249, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #frst-img {
+    background-image: url("../img/galleryImage1.png");
+    background-size: cover;
+    background-position: center;
+  }
+  /* line 254, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #scnd-img {
+    background-image: url("../img/galleryImage2.png");
+    background-size: cover;
+  }
+  /* line 258, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #thrd-img {
+    background-image: url("../img/galleryImage3.png");
+    background-size: cover;
+  }
+  /* line 262, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #fth-img {
+    background-image: url("../img/galleryImage4.png");
+    background-size: cover;
+  }
+  /* line 266, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #fve-img {
+    background-image: url("../img/galleryImage5.png");
+    background-size: cover;
+    background-position: center bottom;
+  }
+  /* line 271, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #six-img {
+    background-image: url("../img/galleryImage6.png");
+    background-size: contain;
+  }
+  /* line 275, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #svn-img {
+    background-image: url("../img/galleryImage7.png");
+    background-size: cover;
+  }
+  /* line 279, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #eit-img {
+    background-image: url("../img/galleryImage8.png");
+    background-size: cover;
+  }
+  /* line 283, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+  #nin-img {
+    background-image: url("../img/galleryImage9.png");
+    background-size: cover;
+  }
+}
+
+/* line 289, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+.hit-the-floor {
+  color: #fff;
+  font-size: 4em;
+  font-weight: bold;
+  font-family: Helvetica;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* line 297, Z:/JorgeCruz/public-christmas-project/scss/_gallery.scss */
+.hit-the-floor {
+  text-align: center;
+}
+
+/* line 1, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+#testimonials {
+  padding-top: 11460px;
+  /* Make the body 100% of the browser viewport height */
+  /* =Navigation */
+  /* =Main */
+  /* =Simple animation up */
+}
+
+/* line 3, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+#testimonials .main-container {
+  font: 16px/1.5 "Raleway", Helvetica, Helvetica Neue, Arial, sans-serif;
+}
+
+/* line 7, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+#testimonials .wrapper {
+  width: auto;
+  margin: 0 10%;
+}
+
+/* line 13, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+#testimonials .main-container {
+  height: 100%;
+  margin: 0;
+}
+
+/* line 18, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+#testimonials .header-letter {
+  margin-top: 0;
+  font-family: "Roboto Condensed", Helvetica, Helvetica Neue, Arial,
+ sans-serif;
+  font-weight: 700;
+  border-style: solid;
+  text-align: center;
+  border-width: 6px;
+}
+
+/* line 29, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+#testimonials #navigation {
+  display: block;
+  position: fixed;
+  left: 0;
+  /*top: 0;*/
+  text-align: center;
+  z-index: 100;
+  background-color: black;
+  opacity: 0.8;
+  height: 100%;
+  padding-right: 2%;
+  padding-top: 4%;
+}
+
+/* line 42, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+#testimonials #navigation a {
+  line-height: 25px;
+  position: relative;
+  padding-right: 3px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* line 49, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+#testimonials #navigation a:hover .nav-label {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+/* line 56, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+#testimonials #navigation .nav-dot {
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 100%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+/* line 71, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+#testimonials #navigation .nav-label {
+  display: block;
+  opacity: 0.5;
+  visibility: hidden;
+  -webkit-transform: translateX(-10px);
+  -ms-transform: translateX(-10px);
+  transform: translateX(-10px);
+  -webkit-transition: all 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -o-transition: all 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  transition: all 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+/* line 81, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+#testimonials #navigation .is-dark a {
+  color: #212121;
+}
+
+/* line 84, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+#testimonials #navigation.is-dark .nav-dot {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 88, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+#testimonials #navigation li {
+  width: auto;
+  list-style: none;
+  padding-top: 130px;
+}
+
+/* line 95, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+#testimonials .font-text p {
+  font-size: 21px;
+}
+
+/* line 99, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+#testimonials .slide {
+  color: #ffffff;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-left: 220px;
+}
+
+/* line 108, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+#testimonials .slide .wrapper {
+  padding-top: 45px;
+  text-align: center;
+  width: 50%;
+}
+
+/* line 114, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+#testimonials .slide#slide01 {
+  background: #40739e;
+}
+
+/* line 117, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+#testimonials .slide#slide02 {
+  background: #34495e;
+}
+
+/* line 120, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+#testimonials .slide#slide03 {
+  background: #487eb0;
+}
+
+/* line 123, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+#testimonials .slide#slide04 {
+  background: #2c3e50;
+}
+
+/* line 128, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+#testimonials .slideInUp {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 1.5s ease-out;
+  -o-transition: all 1.5s ease-out;
+  transition: all 1.5s ease-out;
+  -webkit-transform: translate3d(0, 50px, 0);
+  transform: translate3d(0, 50px, 0);
+}
+
+/* line 136, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+#testimonials .is-active .slideInUp {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 143, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+#testimonials .image-testimonial {
+  width: 50%;
+  border-radius: 40px;
+  position: relative;
+}
+
+/* line 149, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+#testimonials .image-testimonial img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* line 153, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+#testimonials .img-border {
+  border-radius: 40px;
+  border: 7px solid;
+}
+
+/* line 158, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+#testimonials #img-height {
+  width: 26%;
+  margin-left: 7%;
+}
+
+/* line 163, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+#testimonials #header-first {
+  font-size: 30px;
+}
+
+/* line 167, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+#testimonials #header-second {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  /* line 174, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+  #testimonials {
+    padding-top: 11100px;
+  }
+  /* line 177, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+  #testimonials .slide {
+    padding: 0px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  /* line 181, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+  #testimonials .image-testimonial {
+    margin-top: 35px;
+    width: 80%;
+  }
+  /* line 185, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+  #testimonials .image-testimonial + .wraper {
+    margin-bottom: 35px;
+  }
+  /* line 189, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+  #testimonials .slide .wrapper {
+    width: 100%;
+  }
+  /* line 192, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+  #testimonials #img-height {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 205, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+  #testimonials {
+    padding-top: 10400px;
+  }
+  /* line 208, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+  #testimonials .font-text p {
+    font-size: 17px;
+  }
+  /* line 212, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+  #testimonials .slide {
+    padding-left: 8%;
+  }
+  /* line 216, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+  #testimonials .image-testimonial {
+    width: 55%;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 223, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+  #testimonials {
+    padding-top: 9800px;
+  }
+  /* line 225, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+  #testimonials .slide {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  /* line 228, Z:/JorgeCruz/public-christmas-project/scss/_testimonials.scss */
+  #testimonials .fs {
+    height: 100vh;
+  }
+}
+
+/* line 1, Z:/JorgeCruz/public-christmas-project/scss/_message.scss */
+#message {
+  position: relative;
+  padding-bottom: 0px;
+  background-color: white;
+}
+
+/* line 8, Z:/JorgeCruz/public-christmas-project/scss/_message.scss */
+#message .mssg-bg {
+  padding-bottom: 100px;
+  background: #ffffff;
+  /* Old browsers */
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 3%, #ffffff 38%, #ffffff 38%, #ffffff 85%, #b2dce8 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(3%, #ffffff), color-stop(38%, #ffffff), color-stop(38%, #ffffff), color-stop(85%, #ffffff), to(#b2dce8));
+  background: -o-linear-gradient(top, #ffffff 0%, #ffffff 3%, #ffffff 38%, #ffffff 38%, #ffffff 85%, #b2dce8 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 3%, #ffffff 38%, #ffffff 38%, #ffffff 85%, #b2dce8 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#b2dce8',GradientType=0 );
+  /* IE6-9 */
+}
+
+@keyframes unfold {
+  0% {
+    -webkit-transform: perspective(600px) rotateX(-90deg);
+            transform: perspective(600px) rotateX(-90deg);
+    bottom: -180px;
+  }
+  100% {
+    -webkit-transform: perspective(600px) rotateX(0deg);
+            transform: perspective(600px) rotateX(0deg);
+    bottom: -3px;
+  }
+}
+
+@keyframes unfoldBushes {
+  0% {
+    -webkit-transform: perspective(600px) rotateX(-90deg);
+            transform: perspective(600px) rotateX(-90deg);
+    bottom: -180px;
+  }
+  100% {
+    -webkit-transform: perspective(600px) rotateX(0deg);
+            transform: perspective(600px) rotateX(0deg);
+    bottom: -5px;
+  }
+}
+
+@-webkit-keyframes unfoldBack {
+  0% {
+    -webkit-transform: perspective(600px) rotateX(0deg);
+            transform: perspective(600px) rotateX(0deg);
+    bottom: -3px;
+  }
+  100% {
+    -webkit-transform: perspective(600px) rotateX(-90deg);
+            transform: perspective(600px) rotateX(-90deg);
+    bottom: -180px;
+  }
+}
+
+@keyframes unfoldBack {
+  0% {
+    -webkit-transform: perspective(600px) rotateX(0deg);
+            transform: perspective(600px) rotateX(0deg);
+    bottom: -3px;
+  }
+  100% {
+    -webkit-transform: perspective(600px) rotateX(-90deg);
+            transform: perspective(600px) rotateX(-90deg);
+    bottom: -180px;
+  }
+}
+
+@-webkit-keyframes unfoldBushesBack {
+  0% {
+    -webkit-transform: perspective(600px) rotateX(0deg);
+            transform: perspective(600px) rotateX(0deg);
+    bottom: -5px;
+  }
+  100% {
+    -webkit-transform: perspective(600px) rotateX(-90deg);
+            transform: perspective(600px) rotateX(-90deg);
+    bottom: -180px;
+  }
+}
+
+@keyframes unfoldBushesBack {
+  0% {
+    -webkit-transform: perspective(600px) rotateX(0deg);
+            transform: perspective(600px) rotateX(0deg);
+    bottom: -5px;
+  }
+  100% {
+    -webkit-transform: perspective(600px) rotateX(-90deg);
+            transform: perspective(600px) rotateX(-90deg);
+    bottom: -180px;
+  }
+}
+
+/* line 43, Z:/JorgeCruz/public-christmas-project/scss/_message.scss */
+#message .mssg-header {
+  position: relative;
+  height: 100%;
+  background-color: white;
+}
+
+/* line 49, Z:/JorgeCruz/public-christmas-project/scss/_message.scss */
+#message .mssg-header img {
+  width: 100%;
+}
+
+/* line 57, Z:/JorgeCruz/public-christmas-project/scss/_message.scss */
+#message .mssg-header .mssg-animation img {
+  position: absolute;
+  bottom: 0;
+}
+
+/* line 63, Z:/JorgeCruz/public-christmas-project/scss/_message.scss */
+#message .mssg-header .mssg-animation #bush1, #message .mssg-header .mssg-animation #bush2 {
+  width: 15%;
+  bottom: -5px;
+  -webkit-animation-name: unfoldBushesBack;
+          animation-name: unfoldBushesBack;
+  -webkit-animation-duration: 1.0s;
+          animation-duration: 1.0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+/* line 73, Z:/JorgeCruz/public-christmas-project/scss/_message.scss */
+#message .mssg-header .mssg-animation #bush2 {
+  width: 25%;
+  right: 0;
+}
+
+/* line 79, Z:/JorgeCruz/public-christmas-project/scss/_message.scss */
+#message .mssg-header .mssg-animation #building {
+  width: 85%;
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  margin: 0 auto;
+  -webkit-animation-name: unfoldBack;
+          animation-name: unfoldBack;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  visibility: unset;
+}
+
+/* line 95, Z:/JorgeCruz/public-christmas-project/scss/_message.scss */
+#message .mssg-header .mssg-animation.animate #bush1, #message .mssg-header .mssg-animation.animate #bush2 {
+  -webkit-animation-name: unfoldBushes;
+          animation-name: unfoldBushes;
+  -webkit-animation-duration: 1.0s;
+          animation-duration: 1.0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+/* line 102, Z:/JorgeCruz/public-christmas-project/scss/_message.scss */
+#message .mssg-header .mssg-animation.animate #building {
+  -webkit-animation-name: unfold;
+          animation-name: unfold;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+/* line 112, Z:/JorgeCruz/public-christmas-project/scss/_message.scss */
+#message .mssg-header #requests {
+  position: absolute;
+  top: 150px;
+  bottom: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 122, Z:/JorgeCruz/public-christmas-project/scss/_message.scss */
+#message .mssg-header #requests h1 {
+  font-size: 45px;
+  color: white;
+  text-shadow: 1px 1px black;
+  text-align: center;
+  font-weight: bold;
+  display: block;
+}
+
+/* line 131, Z:/JorgeCruz/public-christmas-project/scss/_message.scss */
+#message .mssg-header #requests h1#count {
+  font-size: 60px;
+  display: inline-block;
+  background-color: #162642;
+  padding: 15px 60px;
+  border-radius: 10px;
+}
+
+/* line 143, Z:/JorgeCruz/public-christmas-project/scss/_message.scss */
+#message .mssg-content {
+  margin-top: 100px;
+}
+
+/* line 146, Z:/JorgeCruz/public-christmas-project/scss/_message.scss */
+#message .mssg-content .mssg-title {
+  margin-bottom: 35px;
+}
+
+/* line 150, Z:/JorgeCruz/public-christmas-project/scss/_message.scss */
+#message .mssg-content .mssg-title p {
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  padding: 25px 50px;
+  background-color: #162642;
+  border-radius: 20px;
+}
+
+/* line 161, Z:/JorgeCruz/public-christmas-project/scss/_message.scss */
+#message .mssg-content .mssg-text p {
+  font-weight: bold;
+}
+
+/* line 1, Z:/JorgeCruz/public-christmas-project/scss/_footer.scss */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 6, Z:/JorgeCruz/public-christmas-project/scss/_footer.scss */
+.Footer {
+  background-color: #B2DCE8;
+  overflow: hidden;
+  padding-top: 60px;
+  position: relative;
+}
+
+/* line 15, Z:/JorgeCruz/public-christmas-project/scss/_footer.scss */
+.Footer.animationBg {
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  background-size: cover;
+}
+
+/* line 21, Z:/JorgeCruz/public-christmas-project/scss/_footer.scss */
+.Footer-clouds {
+  background-image: url("../img/footer-clouds.png");
+  height: 133px;
+  width: 100%;
+  z-index: 2;
+  -webkit-animation: animatedClouds 80s linear infinite;
+          animation: animatedClouds 80s linear infinite;
+}
+
+/* line 32, Z:/JorgeCruz/public-christmas-project/scss/_footer.scss */
+.Footer-greetingsTitle, .Footer-greetingsSubtitle {
+  display: block;
+  color: white;
+  text-align: center;
+  text-shadow: 1px -1px black;
+}
+
+/* line 40, Z:/JorgeCruz/public-christmas-project/scss/_footer.scss */
+.Footer-greetings {
+  padding: 25px 15px;
+}
+
+/* line 44, Z:/JorgeCruz/public-christmas-project/scss/_footer.scss */
+.Footer-greetingsTitle {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* line 51, Z:/JorgeCruz/public-christmas-project/scss/_footer.scss */
+.Footer-greetingsSubtitle {
+  font-size: 48px;
+}
+
+/* line 55, Z:/JorgeCruz/public-christmas-project/scss/_footer.scss */
+.Footer-backplane {
+  background-image: url("../img/footer-backplane.png");
+  height: 223px;
+  width: 5772px;
+  margin-bottom: -162px;
+  -webkit-animation: animatedBackline 50s linear infinite;
+          animation: animatedBackline 50s linear infinite;
+}
+
+/* line 66, Z:/JorgeCruz/public-christmas-project/scss/_footer.scss */
+.Footer-treeline {
+  background-image: url("../img/footer-treeline.png");
+  height: 189px;
+  width: 5772px;
+  -webkit-animation: animatedTreeline 30s linear infinite;
+          animation: animatedTreeline 30s linear infinite;
+}
+
+/* line 75, Z:/JorgeCruz/public-christmas-project/scss/_footer.scss */
+.Footer-road {
+  background-image: url("../img/footer-road.png");
+  height: 146px;
+  width: 5772px;
+  position: relative;
+  -webkit-animation: animatedRoad 5s linear infinite;
+          animation: animatedRoad 5s linear infinite;
+}
+
+/* line 86, Z:/JorgeCruz/public-christmas-project/scss/_footer.scss */
+.Footer-bus {
+  position: absolute;
+  -webkit-animation: animatedBus 1.25s linear infinite;
+          animation: animatedBus 1.25s linear infinite;
+  bottom: 50%;
+  left: 25px;
+}
+
+@-webkit-keyframes animatedClouds {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1924px 0;
+  }
+}
+
+@keyframes animatedClouds {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1924px 0;
+  }
+}
+
+@-webkit-keyframes animatedBackline {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1924px 0;
+  }
+}
+
+@keyframes animatedBackline {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1924px 0;
+  }
+}
+
+@-webkit-keyframes animatedTreeline {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1924px 0;
+  }
+}
+
+@keyframes animatedTreeline {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1924px 0;
+  }
+}
+
+@-webkit-keyframes animatedRoad {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1924px 0;
+  }
+}
+
+@keyframes animatedRoad {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1924px 0;
+  }
+}
+
+@-webkit-keyframes animatedBus {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, -15px, 0);
+            transform: translate3d(0, -15px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0px, 0);
+            transform: translate3d(0, 0px, 0);
+  }
+}
+
+@keyframes animatedBus {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, -15px, 0);
+            transform: translate3d(0, -15px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0px, 0);
+            transform: translate3d(0, 0px, 0);
+  }
+}
+
+/* line 10, Z:/JorgeCruz/public-christmas-project/scss/_snow.scss */
+.winter-is-coming, .snow {
+  z-index: 100;
+  pointer-events: none;
+}
+
+/* line 16, Z:/JorgeCruz/public-christmas-project/scss/_snow.scss */
+.winter-is-coming {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  background: transparent;
+}
+
+/* line 28, Z:/JorgeCruz/public-christmas-project/scss/_snow.scss */
+.snow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-animation: falling linear infinite both;
+  animation: falling linear infinite both;
+  -webkit-transform: translate3D(0, -100%, 0);
+  -ms-transform: translate3D(0, -100%, 0);
+      transform: translate3D(0, -100%, 0);
+}
+
+/* line 37, Z:/JorgeCruz/public-christmas-project/scss/_snow.scss */
+.snow--near {
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  background-image: url("../img/snow-large.png");
+  background-size: contain;
+}
+
+/* line 43, Z:/JorgeCruz/public-christmas-project/scss/_snow.scss */
+.snow--near + .snow--alt {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+/* line 49, Z:/JorgeCruz/public-christmas-project/scss/_snow.scss */
+.snow--mid {
+  -webkit-animation-duration: 20s;
+  animation-duration: 20s;
+  background-image: url("../img/snow-medium.png");
+  background-size: contain;
+}
+
+/* line 55, Z:/JorgeCruz/public-christmas-project/scss/_snow.scss */
+.snow--mid + .snow--alt {
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s;
+}
+
+/* line 61, Z:/JorgeCruz/public-christmas-project/scss/_snow.scss */
+.snow--far {
+  -webkit-animation-duration: 30s;
+  animation-duration: 30s;
+  background-image: url("../img/snow-small.png");
+  background-size: contain;
+}
+
+/* line 67, Z:/JorgeCruz/public-christmas-project/scss/_snow.scss */
+.snow--far + .snow--alt {
+  -webkit-animation-delay: 15s;
+  animation-delay: 15s;
+}
+
+@-webkit-keyframes falling {
+  0% {
+    -webkit-transform: translate3D(-7.5%, -100%, 0);
+    transform: translate3D(-7.5%, -100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3D(7.5%, 100%, 0);
+    transform: translate3D(7.5%, 100%, 0);
+  }
+}
+
+@keyframes falling {
+  0% {
+    -webkit-transform: translate3D(-7.5%, -100%, 0);
+    transform: translate3D(-7.5%, -100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3D(7.5%, 100%, 0);
+    transform: translate3D(7.5%, 100%, 0);
+  }
+}
+
+/* line 3, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+header {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  z-index: 20;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+/* line 11, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+header .navbar-default {
+  border: none;
+  margin-bottom: 0;
+  background-color: transparent;
+}
+
+/* line 16, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+header .navbar-default .navbar-brand {
+  display: table;
+  max-width: 70%;
+  height: 100%;
+}
+
+/* line 21, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+header .navbar-default .navbar-brand span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 25, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+header .navbar-default .navbar-brand img {
+  width: auto;
+  height: auto;
+}
+
+/* line 30, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+header .navbar-default .navbar-toggle {
+  padding: 9px;
+  width: 48px;
+  height: 50px;
+  border: none;
+}
+
+/* line 35, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+header .navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+  height: 3px;
+  width: 30px;
+}
+
+/* line 40, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+header .navbar-default .navbar-toggle:hover, header .navbar-default .navbar-toggle:focus {
+  background-color: #B7D433;
+  color: white;
+}
+
+/* line 44, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+header .navbar-default .navbar-toggle:hover .icon-bar, header .navbar-default .navbar-toggle:focus .icon-bar {
+  background-color: white;
+}
+
+/* line 50, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+header .navbar-default #nav-search-button {
+  width: inherit;
+  padding: 0px;
+  margin-right: 8px;
+}
+
+/* line 54, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+header .navbar-default #nav-search-button i {
+  margin-right: 2px;
+  font-size: 20px;
+  color: white;
+}
+
+/* line 60, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+header .navbar-default #nav-search-button:focus, header .navbar-default #nav-search-button:active, header .navbar-default #nav-search-button:hover {
+  background-color: transparent;
+}
+
+/* line 64, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+header .navbar-default .navbar-collapse {
+  border: none;
+}
+
+/* line 67, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+header .navbar-default .navbar-collapse .navbar-nav {
+  margin: 0px -15px;
+  /*** added **/
+  /*** end added **/
+}
+
+/* line 71, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+header .navbar-default .navbar-collapse .navbar-nav li {
+  text-align: center;
+}
+
+/* line 73, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+header .navbar-default .navbar-collapse .navbar-nav li a {
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 15px;
+  border: 1px solid #292A2C;
+  border-bottom: none;
+  background-color: #292A2C;
+}
+
+/* line 82, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+header .navbar-default .navbar-collapse .navbar-nav li a:hover, header .navbar-default .navbar-collapse .navbar-nav li a:focus {
+  color: #B7D433;
+  background-color: white;
+}
+
+/* line 88, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+header .navbar-default .navbar-collapse .navbar-nav li.active a {
+  color: #B7D433;
+}
+
+/* line 93, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+header .navbar-default .navbar-collapse .navbar-nav li.active a,
+header .navbar-default .navbar-collapse .navbar-nav li.active a:hover {
+  background-color: white;
+  color: #B7D433;
+}
+
+/* line 98, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+header .navbar-default .navbar-collapse .navbar-nav li.active a:active {
+  color: #B7D433;
+  background-color: white;
+}
+
+/* line 107, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+header .navbar-default .navbar-collapse .navbar-nav li.dropdown a {
+  color: white;
+  background-color: #292A2C;
+}
+
+/* line 111, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+header .navbar-default .navbar-collapse .navbar-nav li.dropdown.open ul.dropdown-menu li a {
+  color: white;
+  background-color: #292A2C;
+}
+
+/* line 115, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+header .navbar-default .navbar-collapse .navbar-nav li.dropdown.open ul.dropdown-menu li a:hover {
+  color: #B7D433;
+  background-color: white;
+}
+
+/* line 121, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+header .navbar-default .navbar-collapse .dropdown-menu {
+  padding: 0px;
+}
+
+/* line 123, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+header .navbar-default .navbar-collapse .dropdown-menu li {
+  display: block;
+}
+
+/* line 125, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+header .navbar-default .navbar-collapse .dropdown-menu li a {
+  color: #B7D433;
+  padding: 14px 15px 14px 30px;
+}
+
+/* line 130, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+header .navbar-default .navbar-collapse .dropdown-menu li a:hover {
+  background-color: white;
+  color: #292A2C;
+}
+
+/* line 135, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+header .navbar-default .navbar-collapse .dropdown-menu li:last-child {
+  display: block;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* line 149, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+  header .navbar-default {
+    padding-top: 0px;
+  }
+  /* line 154, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+  header .navbar-default .navbar-header .navbar-brand {
+    width: auto;
+    max-width: 100%;
+    margin-left: 0px;
+    margin-top: 10px;
+    padding-left: 0px;
+  }
+  /* line 160, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+  header .navbar-default .navbar-header .navbar-brand img {
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+  }
+  /* line 168, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+  header .navbar-default .navbar-collapse {
+    padding: 0px;
+  }
+  /* line 171, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+  header .navbar-default .navbar-collapse .navbar-nav {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    /*** added **/
+    /*** end added **/
+  }
+  /* line 180, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+  header .navbar-default .navbar-collapse .navbar-nav li {
+    float: none;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 15%;
+            flex: 0 0 15%;
+    text-align: center;
+  }
+  /* line 184, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+  header .navbar-default .navbar-collapse .navbar-nav li a {
+    text-transform: capitalize;
+    font-weight: bold;
+    background-color: inherit;
+    border: none;
+    padding: 5px 12px;
+    padding-right: 0px;
+    font-size: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  /* line 197, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+  header .navbar-default .navbar-collapse .navbar-nav li a:hover, header .navbar-default .navbar-collapse .navbar-nav li a:focus, header .navbar-default .navbar-collapse .navbar-nav li a:active {
+    text-decoration: none;
+    color: #282828;
+    background-color: rgba(245, 245, 245, 0.7);
+  }
+  /* line 203, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+  header .navbar-default .navbar-collapse .navbar-nav li:last-child {
+    display: inline-block;
+  }
+  /* line 207, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+  header .navbar-default .navbar-collapse .navbar-nav li.active a,
+  header .navbar-default .navbar-collapse .navbar-nav li.active a:hover {
+    color: #282828;
+    background-color: rgba(245, 245, 245, 0.7);
+  }
+  /* line 214, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+  header .navbar-default .navbar-collapse .navbar-nav li.dropdown a {
+    background-color: white;
+    color: white;
+  }
+  /* line 218, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+  header .navbar-default .navbar-collapse .navbar-nav li.dropdown a:hover, header .navbar-default .navbar-collapse .navbar-nav li.dropdown.open a {
+    color: white;
+    background-color: #F5F5F5;
+  }
+  /* line 222, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+  header .navbar-default .navbar-collapse .navbar-nav li.dropdown.open ul.dropdown-menu li a {
+    color: white;
+    background-color: #292A2C;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  /* line 231, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+  header .navbar-default .navbar-collapse .navbar-nav li.dropdown.open ul.dropdown-menu li a:hover {
+    text-decoration: underline;
+    background-color: transparent;
+    color: #757575;
+    text-decoration: none;
+  }
+  /* line 239, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+  header .navbar-default .navbar-collapse .navbar-nav .dropdown-menu {
+    border: none;
+    padding-bottom: 0px;
+    border-radius: 0;
+    background-color: #292A2C;
+    margin-left: 0px;
+  }
+  /* line 245, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+  header .navbar-default .navbar-collapse .navbar-nav .dropdown-menu li {
+    margin: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  /* line 249, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+  header .navbar-default .navbar-collapse .navbar-nav .dropdown-menu li a {
+    color: #292A2C;
+    padding: 15px 15px 15px 30px;
+    margin-left: 0px;
+    padding-left: 15px;
+  }
+  /* line 255, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+  header .navbar-default .navbar-collapse .navbar-nav .dropdown-menu li a:hover {
+    text-decoration: underline;
+    color: #292A2C;
+  }
+  /* line 263, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+  header .navbar-default .navbar-collapse .navbar-nav .dropdown-menu li:last-child {
+    display: block;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* line 276, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+  header .navbar-default .navbar-header {
+    width: auto;
+  }
+  /* line 282, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+  header .navbar-default .navbar-collapse .navbar-nav li {
+    height: auto;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* line 304, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+  header .navbar-default .navbar-collapse .navbar-nav li a {
+    margin-left: 15px;
+    padding-left: 22px;
+    padding-right: 22px;
+    margin-left: 0px;
+  }
+  /* line 311, Z:/JorgeCruz/public-christmas-project/scss/_header.scss */
+  header .navbar-default .navbar-collapse .navbar-nav .dropdown-menu {
+    margin-left: 15px;
+  }
+}
+
+/* line 97, Z:/JorgeCruz/public-christmas-project/scss/main.scss */
+.navbar-default .navbar-nav > li > a,
+#header .navbar-default .navbar-nav > li > a {
+  transitions: ease all 0.5s;
+}
